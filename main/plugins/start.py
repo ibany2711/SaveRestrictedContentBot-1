@@ -33,7 +33,7 @@ async def sett(event):
     msg = await button.get_reply_message() 
     await event.delete()
     async with Drone.conversation(event.chat_id) as conv: 
-        xx = await conv.send_message("Send me any image for thumbnail as a `reply` to this message.")
+        xx = await conv.send_message("Kirimi saya gambar apapun untuk sebagai balasan untuk pesan in.")
         x = await conv.get_reply()
         if not x.media:
             xx.edit("No media found.")

@@ -7,7 +7,7 @@ from telethon import events, Button
 from pyrogram import idle
 from main.plugins.pyroplug import Bot
 
-st = "Send me Link of any message to clone it here, For private channel message, send invite link first.\n\n**SUPPORT:** @TeamDrone\n**DEV:** @MaheshChauhan"
+st = "Kirimi saya Tautan pesan apa pun untuk mengkloningnya di sini, Untuk pesan saluran pribadi, kirim tautan undangan terlebih dahulu"
 
 @Drone.on(events.NewMessage(incoming=True, pattern="/start"))
 async def start(event):

@@ -7,7 +7,7 @@ from telethon import events, Button
 from pyrogram import idle
 from main.plugins.pyroplug import Bot
 
-st = "Kirimi saya Tautan pesan apa pun untuk mengkloningnya di sini, Untuk pesan saluran pribadi, kirim tautan undangan terlebih dahulu"
+st = "Send me Link of any message to clone it here, For private channel message, send invite link first."
 
 @Drone.on(events.NewMessage(incoming=True, pattern="/start"))
 async def start(event):
@@ -33,7 +33,7 @@ async def sett(event):
     msg = await button.get_reply_message() 
     await event.delete()
     async with Drone.conversation(event.chat_id) as conv: 
-        xx = await conv.send_message("Kirimi saya gambar apapun untuk sebagai balasan untuk pesan in.")
+        xx = await conv.send_message("Send me any image for SaveContenBot This as a reply to this message.")
         x = await conv.get_reply()
         if not x.media:
             xx.edit("No media found.")
@@ -58,6 +58,6 @@ async def remt(event):
         os.remove(f'{event.sender_id}.jpg')
         await event.edit('Removed!')
     except Exception:
-        await event.edit("No thumbnail saved.")                        
+        await event.edit("No file saved..")                        
     
     

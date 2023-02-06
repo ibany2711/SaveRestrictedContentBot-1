@@ -13,8 +13,8 @@ st = "Send me Link of any message to clone it here, For private channel message,
 async def start(event):
     await event.reply(f'{st}', 
                       buttons=[
-                              [Button.inline("SET THUMB.", data="sett"),
-                               Button.inline("REM THUMB.", data="remt")]
+                              [Button.inline("•SET THUMB•", data="sett"),
+                               Button.inline("•REM THUMB•", data="remt")]
                               ])
     try:
         await Bot.start()

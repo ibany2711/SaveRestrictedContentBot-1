@@ -17,7 +17,7 @@ TIME_DURATION_UNITS = (
 
 
 @Drone.on(events.NewMessage(incoming=True, pattern="/ping"))
-async def ping_pong(client, m: Message):
+async def ping(event):
     start = time()
     current_time = datetime.utcnow()
     uptime_sec = (current_time - START_TIME).total_seconds()

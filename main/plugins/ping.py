@@ -4,6 +4,7 @@ from .. import bot as Drone
 from telethon import events, Button
 from pyrogram import idle
 from main.plugins.pyroplug import Bot
+from telethon.sync import TelegramClient
 
 from datetime import datetime
 from time import time

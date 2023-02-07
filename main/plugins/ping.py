@@ -16,7 +16,7 @@ TIME_DURATION_UNITS = (
 
 
 
-@Drone.on(events.NewMessage(incoming=True, pattern="/ping"))
+@Drone.on(events.NewMessage(incoming=True, pattern="ping"))
 async def ping(event):
     start = time()
     current_time = datetime.utcnow()

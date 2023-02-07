@@ -1,6 +1,10 @@
 
-import asyncio
+import os
 from .. import bot as Drone
+from telethon import events, Button
+from pyrogram import idle
+from main.plugins.pyroplug import Bot
+
 from datetime import datetime
 from time import time
 

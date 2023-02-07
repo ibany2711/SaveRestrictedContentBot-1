@@ -1,5 +1,6 @@
 
 import asyncio
+from .. import bot as Drone
 from datetime import datetime
 from time import time
 
